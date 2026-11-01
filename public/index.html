@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triva AI — Teman Perjalananmu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">✈</span><span>triva<span class="brand-dot">.</span>ai</span></a>
+      <button class="new-chat" id="newChat"><span>＋</span> Percakapan baru</button>
+      <div class="side-heading">JELAJAHI TRIVA</div>
+      <div class="side-feature"><span>🌏</span><div><b>Inspirasi destinasi</b><small>Temukan tempat baru</small></div></div>
+      <div class="side-feature"><span>🗺️</span><div><b>Rencana perjalanan</b><small>Susun itinerary liburan</small></div></div>
+      <div class="side-feature"><span>💰</span><div><b>Atur anggaran</b><small>Rencanakan biaya wisata</small></div></div>
+      <div class="sidebar-bottom"><span class="online-dot"></span> Triva siap menemani perjalananmu</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div><div class="top-title">Triva AI <span class="online-label">● Online</span></div><div class="top-subtitle">Your friendly travel assistant</div></div>
+        <button class="clear-btn" id="clearChat">↻ <span>Reset chat</span></button>
+      </header>
+
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="hero-icon">🌴</div>
+          <div class="eyebrow">LET'S EXPLORE THE WORLD</div>
+          <h1>Hai, mau ke mana<br><span>petualanganmu?</span></h1>
+          <p class="welcome-text">Aku Triva, asisten perjalanan pribadimu. Ceritakan liburan impianmu, dan kita rencanakan bersama!</p>
+          <div class="quick-title">MULAI DENGAN IDE INI</div>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Buatkan itinerary 3 hari 2 malam di Bali dengan budget 2 juta rupiah untuk 2 orang."><span>🏝️</span><b>Liburan ke Bali</b><small>Itinerary 3 hari</small></button>
+            <button class="suggestion" data-prompt="Rekomendasikan tempat wisata menarik di Medan dan sekitarnya."><span>📍</span><b>Wisata sekitar Medan</b><small>Cari destinasi seru</small></button>
+            <button class="suggestion" data-prompt="Bagaimana cara merencanakan liburan hemat untuk pemula?"><span>💡</span><b>Tips liburan hemat</b><small>Travel lebih pintar</small></button>
+          </div>
+        </div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </section>
+
+      <footer class="composer-wrap">
+        <div class="composer">
+          <textarea id="messageInput" rows="1" placeholder="Tulis rencana atau tanyakan destinasi impianmu..." aria-label="Tulis pesan"></textarea>
+          <button id="sendButton" class="send-button" aria-label="Kirim pesan">↑</button>
+        </div>
+        <div class="footer-note">✦ Triva AI menggunakan Google Gemini · Periksa kembali informasi perjalanan sebelum berangkat.</div>
+      </footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
